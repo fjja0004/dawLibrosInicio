@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:h="jakarta.faces.html" xmlns:ui="jakarta.faces.facelets">
+
+<h:head>
+<meta charset="UTF-8"/>
+<title>Catálogo de libros</title>
+</h:head>
+<h:body>
+    <h1>Catálogo de libros</h1>
+    <ul>
+        <ui:repeat var="l" value="#{ctrlLibros.libros}">
+        <li><b>#{l.isbn}</b> #{l.titulo}</li>
+        </ui:repeat>
+    </ul>
+</h:body>
+</html>
